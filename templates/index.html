@@ -1,79 +1,81 @@
-<main>
-    <div class="ribbon"></div>
-    <div class="card-container">
-      <div class="mdc-card">
-        
-        <form id="survey-form">
-          <div class="mdc-layout-grid">
-            <div class="mdc-layout-grid__inner">
-              
-              
-              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop">
-                <div class="test">
-                <i class="fas fa-poll-h fa-3x"></i>
+<!DOCTYPE html>
+<html>
+  <main>
+      <div class="ribbon"></div>
+      <div class="card-container">
+        <div class="mdc-card">
+          
+          <form action="/submit" method="post">
+            <div class="mdc-layout-grid">
+              <div class="mdc-layout-grid__inner">
+                
+                
+                <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop">
+                  <div class="test">
+                  <i class="fas fa-poll-h fa-3x"></i>
+                  </div>
+                  <div class="test">
+                  <h1 id="title">NutreRed</h1>
+                  <p id="description">Una solución al hambre.</p>
+                  </div>
                 </div>
-                <div class="test">
-                <h1 id="title">NutreRed</h1>
-                <p id="description">Una solución al hambre.</p>
+                <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop">
+                  <h2>Introduce tu información</h2>
                 </div>
-              </div>
-              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop">
-                <h2>Introduce tu información</h2>
-              </div>
-              
-              
-              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop">
-                <label id="name-label" class="mdc-text-field mdc-text-field--filled w-100">
-                  <span class="mdc-text-field__ripple"></span>
-                  <input id="name" 
-                         class="mdc-text-field__input" 
-                         type="text" 
-                         placeholder="Introduce tu nombre" 
-                         aria-labelledby="name-floating-label" 
-                         required>
-                  <span class="mdc-floating-label" id="name-floating-label">Nombre Completo</span>
-                  <span class="mdc-line-ripple"></span>
-                </label>
-              </div>
-              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-9-desktop">
-                <label id="email-label" class="mdc-text-field mdc-text-field--filled w-100">
-                  <span class="mdc-text-field__ripple"></span>
-                  <input id="email" 
-                         class="mdc-text-field__input" 
-                         type="email" 
-                         placeholder="Introduce tu email" 
-                         aria-labelledby="email-floating-label" 
-                         required>
-                  <span class="mdc-floating-label" id="email-floating-label">Email</span>
-                  <span class="mdc-line-ripple"></span>
-                </label>
-              </div>
-              
-              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
-                <select name="test-12" id="dropdown">
-                  <option value="1">Soy una caridad</option>
-                  <option value="2">Soy una empresa socialmente responsable</option>
-                </select>
-              </div>
-              
-              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-9-desktop">
-                <label id="email-label" class="mdc-text-field mdc-text-field--filled w-100">
-                  <span class="mdc-text-field__ripple"></span>
-                  <input id="email" 
-                         class="mdc-text-field__input" 
-                         type="email" 
-                         placeholder="Introduce tu dirección" 
-                         aria-labelledby="email-floating-label" 
-                         required>
-                  <span class="mdc-floating-label" id="email-floating-label">Dirección</span>
-                  <span class="mdc-line-ripple"></span>
-                </label>
+                
+                
+                <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop">
+                  <label id="nombre" class="mdc-text-field mdc-text-field--filled w-100">
+                    <span class="mdc-text-field__ripple"></span>
+                    <input id="name" 
+                          class="mdc-text-field__input" 
+                          type="text" 
+                          placeholder="Introduce tu nombre" 
+                          aria-labelledby="name-floating-label" 
+                          required>
+                    <span class="mdc-floating-label" id="name-floating-label">Nombre Completo</span>
+                    <span class="mdc-line-ripple"></span>
+                  </label>
+                </div>
+                <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-9-desktop">
+                  <label id="email" class="mdc-text-field mdc-text-field--filled w-100">
+                    <span class="mdc-text-field__ripple"></span>
+                    <input id="email" 
+                          class="mdc-text-field__input" 
+                          type="email" 
+                          placeholder="Introduce tu email" 
+                          aria-labelledby="email-floating-label" 
+                          required>
+                    <span class="mdc-floating-label" id="email-floating-label">Email</span>
+                    <span class="mdc-line-ripple"></span>
+                  </label>
+                </div>
+                
+                <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+                  <select name="tipo" id="dropdown">
+                    <option value="C">Soy una caridad</option>
+                    <option value="D">Soy una empresa socialmente responsable</option>
+                  </select>
+                </div>
+                
+                <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-9-desktop">
+                  <label id="email-label" class="mdc-text-field mdc-text-field--filled w-100">
+                    <span class="mdc-text-field__ripple"></span>
+                    <input id="dirección" 
+                          class="mdc-text-field__input" 
+                          type="text" 
+                          placeholder="Introduce tu dirección" 
+                          aria-labelledby="email-floating-label" 
+                          required>
+                    <span class="mdc-floating-label" id="email-floating-label">Dirección</span>
+                    <span class="mdc-line-ripple"></span>
+                  </label>
+                </div>
               </div>
             </div>
-          </div>
-          
-        </form>
-      </div> 
-    </div>
-  </main>
-  
+            
+          </form>
+        </div> 
+      </div>
+    </main>
+    </html>
