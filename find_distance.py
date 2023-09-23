@@ -31,10 +31,15 @@ try:
             data = response.json()
             # Extract the distance in meters from the response
             distance_meters = data['features'][0]['properties']['segments'][0]['distance']
+            guardado = distance_meters
+            #Guarda la distancia en proveedores.csv
+            guardar_distancia(guardado)
+            
             print(f"Distance in meters: {distance_meters} meters")
         else:
             print(f"Error: {response.status_code} - {response.text}")
     else:
         print("Geocoding request failed.")
+        
 except Exception as e:
     print(f"An error occurred: {e}")
