@@ -1,0 +1,62 @@
+:root {
+    --mdc-theme-secondary: var(--mdc-theme-primary);
+  }
+  .test {
+    display: inline-block;
+  }
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: .938rem;
+    font-weight: 400;
+    background-color: #fafafa;
+    margin: 0;
+  }
+  h2 {
+    margin-top: .75em;
+    margin-bottom: .25em;
+  }
+  p {
+    margin-top: 0;
+  }
+  .flex-column {
+    display: flex;
+    flex-direction: column;
+  }
+  .w-100 {
+    width: 100%;
+  }
+  
+  .ribbon {
+    background-color: #018786;
+    flex-shrink: 0;
+    height: 42vh;
+    width: 100%;
+  }
+  .card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: -40vh;
+  }
+  .mdc-card {
+    width: 100%;
+    max-width: 860px;
+    margin: 16px;
+  }
+  
+  #dropdown {
+    display: none;
+  }
+  
+  .mdc-radio {
+    margin-right: 2px;
+  }
+  
+  
+  
+  .mdc-text-field--radio {
+    height: 1.75rem;
+  }
+  
+  .mdc-text-field--radio input {
+    font-size: 0.875rem;
+  }
