@@ -1,0 +1,1617 @@
+
+<main>
+    <div class="ribbon"></div>
+    <div class="card-container">
+      <div class="mdc-card">
+        
+        <form id="survey-form">
+          <div class="mdc-layout-grid">
+            <div class="mdc-layout-grid__inner">
+              
+              
+              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop">
+                <div class="test">
+                <i class="fas fa-poll-h fa-3x"></i>
+                </div>
+                <div class="test">
+                <h1 id="title">New Coder Survery</h1>
+                <p id="description">— an anonymous survey of thousands of people who recently started coding.</p>
+                </div>
+              </div>
+              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop">
+                <h2>Personal Details</h2>
+              </div>
+              
+              
+              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop">
+                <label id="name-label" class="mdc-text-field mdc-text-field--filled w-100">
+                  <span class="mdc-text-field__ripple"></span>
+                  <input id="name" 
+                         class="mdc-text-field__input" 
+                         type="text" 
+                         placeholder="Enter your name" 
+                         aria-labelledby="name-floating-label" 
+                         required>
+                  <span class="mdc-floating-label" id="name-floating-label">Full Name</span>
+                  <span class="mdc-line-ripple"></span>
+                </label>
+              </div>
+              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-9-desktop">
+                <label id="email-label" class="mdc-text-field mdc-text-field--filled w-100">
+                  <span class="mdc-text-field__ripple"></span>
+                  <input id="email" 
+                         class="mdc-text-field__input" 
+                         type="email" 
+                         placeholder="Enter your email" 
+                         aria-labelledby="email-floating-label" 
+                         required>
+                  <span class="mdc-floating-label" id="email-floating-label">Email</span>
+                  <span class="mdc-line-ripple"></span>
+                </label>
+              </div>
+              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-2-tablet mdc-layout-grid__cell--span-3-desktop">
+                <label id="number-label" class="mdc-text-field mdc-text-field--filled w-100">
+                  <span class="mdc-text-field__ripple"></span>
+                  <input id="number" 
+                         min="1899" 
+                         max="2020"
+                         class="mdc-text-field__input" 
+                         type="number" 
+                         placeholder="Enter year" 
+                         aria-labelledby="number-floating-label" 
+                         required>
+                  <span class="mdc-floating-label" id="number-floating-label">Birth Year</span>
+                  <span class="mdc-line-ripple"></span>
+                </label>
+              </div>
+              
+              
+              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+                <select name="test-12" id="dropdown">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                </select>
+                <div class="mdc-select mdc-select--filled mdc-select--required w-100">
+                  <span class="mdc-select__ripple"></span>
+                  <div class="mdc-select__anchor" aria-required="true">
+                    <span class="mdc-select__selected-text"></span>
+                    <span class="mdc-select__dropdown-icon">
+                      <svg class="mdc-select__dropdown-icon-graphic" viewBox="7 10 10 5">
+                        <polygon class="mdc-select__dropdown-icon-inactive"
+                                 stroke="none"
+                                 fill-rule="evenodd"
+                                 points="7 10 12 15 17 10">
+                        </polygon>
+                        <polygon class="mdc-select__dropdown-icon-active"
+                                 stroke="none"
+                                 fill-rule="evenodd"
+                                 points="7 15 12 10 17 15">
+                        </polygon>
+                      </svg>
+                    </span>
+                    <span class="mdc-floating-label">Country</span>
+                    <span class="mdc-line-ripple"></span>
+                  </div>
+                  <div class="mdc-select__menu mdc-menu mdc-menu-surface w-100">
+                    <ul class="mdc-list">
+                      <li class="mdc-list-item mdc-list-item--disabled" data-value="disabled">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Select your country</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AF">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Afghanistan</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AX">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Åland Islands</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AL">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Albania</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="DZ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Algeria</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AS">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">American Samoa</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AD">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Andorra</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AO">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Angola</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AI">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Anguilla</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AQ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Antarctica</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AG">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Antigua and Barbuda</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AR">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Argentina</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Armenia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AW">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Aruba</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AU">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Australia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AT">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Austria</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AZ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Azerbaijan</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BS">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Bahamas</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BH">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Bahrain</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BD">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Bangladesh</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BB">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Barbados</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BY">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Belarus</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BE">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Belgium</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BZ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Belize</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BJ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Benin</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Bermuda</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BT">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Bhutan</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BO">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Bolivia, Plurinational State of</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BQ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Bonaire, Sint Eustatius and Saba</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BA">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Bosnia and Herzegovina</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BW">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Botswana</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BV">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Bouvet Island</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BR">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Brazil</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="IO">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">British Indian Ocean Territory</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BN">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Brunei Darussalam</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BG">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Bulgaria</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BF">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Burkina Faso</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BI">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Burundi</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="KH">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Cambodia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Cameroon</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CA">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Canada</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CV">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Cape Verde</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="KY">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Cayman Islands</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CF">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Central African Republic</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TD">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Chad</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CL">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Chile</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CN">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">China</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CX">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Christmas Island</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CC">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Cocos (Keeling) Islands</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CO">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Colombia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="KM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Comoros</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CG">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Congo</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CD">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Congo, the Democratic Republic of the</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CK">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Cook Islands</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CR">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Costa Rica</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CI">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Côte d'Ivoire</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="HR">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Croatia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CU">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Cuba</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CW">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Curaçao</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CY">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Cyprus</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CZ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Czech Republic</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="DK">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Denmark</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="DJ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Djibouti</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="DM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Dominica</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="DO">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Dominican Republic</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="EC">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Ecuador</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="EG">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Egypt</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SV">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">El Salvador</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GQ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Equatorial Guinea</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="ER">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Eritrea</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="EE">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Estonia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="ET">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Ethiopia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="FK">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Falkland Islands (Malvinas)</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="FO">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Faroe Islands</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="FJ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Fiji</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="FI">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Finland</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="FR">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">France</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GF">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">French Guiana</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="PF">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">French Polynesia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TF">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">French Southern Territories</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GA">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Gabon</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Gambia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GE">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Georgia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="DE">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Germany</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GH">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Ghana</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GI">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Gibraltar</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GR">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Greece</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GL">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Greenland</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GD">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Grenada</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GP">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Guadeloupe</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GU">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Guam</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GT">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Guatemala</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GG">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Guernsey</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GN">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Guinea</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GW">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Guinea-Bissau</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GY">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Guyana</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="HT">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Haiti</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="HM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Heard Island and McDonald Islands</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="VA">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Holy See (Vatican City State)</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="HN">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Honduras</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="HK">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Hong Kong</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="HU">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Hungary</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="IS">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Iceland</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="IN">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">India</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="ID">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Indonesia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="IR">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Iran, Islamic Republic of</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="IQ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Iraq</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="IE">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Ireland</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="IM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Isle of Man</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="IL">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Israel</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="IT">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Italy</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="JM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Jamaica</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="JP">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Japan</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="JE">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Jersey</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="JO">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Jordan</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="KZ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Kazakhstan</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="KE">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Kenya</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="KI">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Kiribati</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="KP">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Korea, Democratic People's Republic of</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="KR">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Korea, Republic of</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="KW">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Kuwait</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="KG">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Kyrgyzstan</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="LA">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Lao People's Democratic Republic</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="LV">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Latvia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="LB">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Lebanon</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="LS">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Lesotho</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="LR">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Liberia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="LY">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Libya</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="LI">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Liechtenstein</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="LT">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Lithuania</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="LU">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Luxembourg</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MO">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Macao</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MK">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Macedonia, the former Yugoslav Republic of</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MG">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Madagascar</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MW">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Malawi</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MY">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Malaysia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MV">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Maldives</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="ML">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Mali</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MT">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Malta</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MH">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Marshall Islands</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MQ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Martinique</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MR">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Mauritania</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MU">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Mauritius</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="YT">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Mayotte</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MX">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Mexico</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="FM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Micronesia, Federated States of</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MD">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Moldova, Republic of</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MC">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Monaco</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MN">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Mongolia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="ME">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Montenegro</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MS">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Montserrat</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MA">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Morocco</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MZ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Mozambique</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Myanmar</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="NA">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Namibia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="NR">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Nauru</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="NP">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Nepal</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="NL">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Netherlands</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="NC">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">New Caledonia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="NZ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">New Zealand</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="NI">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Nicaragua</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="NE">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Niger</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="NG">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Nigeria</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="NU">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Niue</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="NF">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Norfolk Island</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MP">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Northern Mariana Islands</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="NO">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Norway</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="OM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Oman</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="PK">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Pakistan</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="PW">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Palau</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="PS">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Palestinian Territory, Occupied</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="PA">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Panama</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="PG">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Papua New Guinea</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="PY">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Paraguay</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="PE">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Peru</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="PH">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Philippines</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="PN">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Pitcairn</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="PL">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Poland</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="PT">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Portugal</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="PR">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Puerto Rico</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="QA">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Qatar</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="RE">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Réunion</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="RO">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Romania</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="RU">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Russian Federation</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="RW">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Rwanda</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="BL">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Saint Barthélemy</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SH">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Saint Helena, Ascension and Tristan da Cunha</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="KN">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Saint Kitts and Nevis</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="LC">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Saint Lucia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="MF">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Saint Martin (French part)</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="PM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Saint Pierre and Miquelon</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="VC">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Saint Vincent and the Grenadines</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="WS">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Samoa</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">San Marino</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="ST">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Sao Tome and Principe</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SA">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Saudi Arabia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SN">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Senegal</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="RS">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Serbia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SC">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Seychelles</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SL">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Sierra Leone</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SG">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Singapore</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SX">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Sint Maarten (Dutch part)</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SK">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Slovakia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SI">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Slovenia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SB">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Solomon Islands</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SO">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Somalia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="ZA">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">South Africa</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GS">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">South Georgia and the South Sandwich Islands</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SS">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">South Sudan</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="ES">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Spain</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="LK">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Sri Lanka</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SD">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Sudan</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SR">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Suriname</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SJ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Svalbard and Jan Mayen</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SZ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Swaziland</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SE">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Sweden</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="CH">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Switzerland</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="SY">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Syrian Arab Republic</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TW">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Taiwan, Province of China</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TJ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Tajikistan</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TZ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Tanzania, United Republic of</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TH">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Thailand</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TL">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Timor-Leste</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TG">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Togo</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TK">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Tokelau</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TO">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Tonga</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TT">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Trinidad and Tobago</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TN">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Tunisia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TR">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Turkey</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Turkmenistan</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TC">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Turks and Caicos Islands</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="TV">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Tuvalu</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="UG">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Uganda</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="UA">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Ukraine</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="AE">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">United Arab Emirates</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="GB">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">United Kingdom</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="US">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">United States</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="UM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">United States Minor Outlying Islands</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="UY">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Uruguay</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="UZ">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Uzbekistan</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="VU">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Vanuatu</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="VE">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Venezuela, Bolivarian Republic of</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="VN">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Vietnam</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="VG">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Virgin Islands, British</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="VI">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Virgin Islands, U.S.</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="WF">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Wallis and Futuna</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="EH">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Western Sahara</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="YE">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Yemen</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="ZM">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Zambia</span>
+                      </li>
+                      <li class="mdc-list-item" data-value="ZW">
+                        <span class="mdc-list-item__ripple"></span>
+                        <span class="mdc-list-item__text">Zimbabwe</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+                <label class="mdc-text-field mdc-text-field--filled w-100">
+                  <span class="mdc-text-field__ripple"></span>
+                  <input class="mdc-text-field__input" 
+                         type="text"
+                         aria-labelledby="city-floating-label">
+                  <span class="mdc-floating-label" id="city-floating-label">City</span>
+                  <span class="mdc-line-ripple"></span>
+                </label>
+              </div>
+              
+              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop">
+                <h2>Survey Questions</h2>
+              </div>
+              
+              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop flex-column">
+                <p>1. Are you already working as a software developer?</p>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="is-software-dev" type="radio" value="0">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>Yes</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="is-software-dev" type="radio" value="1">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>No</label>
+                </div>
+              </div>
+              
+              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop flex-column">
+                <p>2. Would you prefer to ...</p>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-pref" type="radio" value="0">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>work for a startup</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-pref" type="radio" value="1">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>start your own business</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-pref" type="radio" value="2">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>work for a multinational corporation</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-pref" type="radio" value="3">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>freelance</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-pref" type="radio" value="4">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>work for a medium-sized company</label>
+                </div>
+              </div>
+              
+              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop flex-column">
+                <p>3. Which one of these roles are you most interested in?</p>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-role-interest" type="radio" value="0">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>Front-End Web Developer</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-role-interest" type="radio" value="1">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>Mobile Developer</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-role-interest" type="radio" value="2">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>Data Scientist / Data Engineer</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-role-interest" type="radio" value="3">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>User Experience Designer</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-role-interest" type="radio" value="4">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>Back-End Web Developer</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-role-interest" type="radio" value="5">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>Full-Stack Web Developer</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-role-interest" type="radio" value="6">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>Quality Assurance Engineer</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-role-interest" type="radio" value="7">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>Product Manager</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-role-interest" type="radio" value="8">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>DevOps / SysAdmin</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-role-interest" type="radio" value="9">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label class="mdc-text-field mdc-text-field--filled mdc-text-field--radio mdc-text-field--no-label">
+                    <span class="mdc-text-field__ripple"></span>
+                    <input class="mdc-text-field__input" type="text" placeholder="Other" aria-label="Label">
+                    <span class="mdc-line-ripple"></span>
+                  </label>
+                </div>
+              </div>
+              
+              <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop flex-column">
+                <p>4. When do you plan to start applying for developer jobs?</p>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-apply-when" type="radio" value="0">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>I'm already applying</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-apply-when" type="radio" value="1">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>Within the next 6 months</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-apply-when" type="radio" value="2">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>Within 7 to 12 months</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-apply-when" type="radio" value="3">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>More than 12 months from now</label>
+                </div>
+                <div class="mdc-form-field">
+                  <div class="mdc-radio">
+                    <input class="mdc-radio__native-control" name="job-apply-when" type="radio" value="4">
+                    <div class="mdc-radio__background">
+                      <div class="mdc-radio__outer-circle"></div>
+                      <div class="mdc-radio__inner-circle"></div>
+                    </div>
+                    <div class="mdc-radio__ripple"></div>
+                  </div>
+                  <label>I haven't decided</label>
+                </div>
+              </div>
+              
+            
+            </div>
+          </div>
+          
+          
+        </form>
+      </div> 
+    </div>
+    
+      
+    
+    
+    
+    
+    <!--
+   
+           
+                <p>5. Would you prefer to work...</p>
+                <div>
+                  <p>
+                    <label>
+                      <input name="job-where-pref" type="radio" value="0" />
+                      <span>from home</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="job-where-pref" type="radio" value="1" />
+                      <span>in an office with other developers</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="job-where-pref" type="radio" value="2" />
+                      <span>No preference</span>
+                    </label>
+                  </p>
+                </div>
+                <p>6. Are you willing to relocate for a job?</p>
+                <div>
+                  <p>
+                    <label>
+                      <input name="job-relocate" type="radio" value="0" />
+                      <span>Yes</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="job-relocate" type="radio" value="1" />
+                      <span>No</span>
+                    </label>
+                  </p>
+                </div>
+                <p>7. Which types of in-person coding events have you attended?</p>
+                <div>
+                  <p>
+                    <label>
+                      <input name="coding-event" type="radio" value="0" />
+                      <span>Coffee & Codes</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="coding-event" type="radio" value="1" />
+                      <span>Hackathons</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="coding-event" type="radio" value="2" />
+                      <span>Conferences</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="coding-event" type="radio" value="3" />
+                      <span>NodeSchool</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="coding-event" type="radio" value="4" />
+                      <span>RailsBridge</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="coding-event" type="radio" value="5" />
+                      <span>Startup Weekend</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="coding-event" type="radio" value="6" />
+                      <span>Women Who Code</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="coding-event" type="radio" value="7" />
+                      <span>Girl Develop It</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="coding-event" type="radio" value="8" />
+                      <span>None</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="coding-event" type="radio" value="9" />
+                      <span>
+                        <input class="radio-input" type="text" placeholder="Other">
+                      </span>
+                    </label>
+                  </p>
+                </div>
+                <p>8. Which learning resources have you found helpful?</p>
+                <div>
+                  <p>
+                    <label>
+                      <input name="learning-resource" type="radio" value="0" />
+                      <span>edX</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="learning-resource" type="radio" value="1" />
+                      <span>Coursera</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="learning-resource" type="radio" value="2" />
+                      <span>freeCodeCamp</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="learning-resource" type="radio" value="3" />
+                      <span>Khan Academy</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="learning-resource" type="radio" value="4" />
+                      <span>Code School (Pluralsight)</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="learning-resource" type="radio" value="5" />
+                      <span>Codecademy</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="learning-resource" type="radio" value="6" />
+                      <span>Udacity</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="learning-resource" type="radio" value="7" />
+                      <span>Udemy</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="learning-resource" type="radio" value="8" />
+                      <span>Code Wars</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="learning-resource" type="radio" value="9" />
+                      <span>The Odin Project</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="learning-resource" type="radio" value="10" />
+                      <span>DevTips</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      <input name="learning-resource" type="radio" value="11" />
+                      <span>
+                        <input class="radio-input" type="text" placeholder="Other">
+                      </span>
+                    </label>
+                  </p>
+                </div>
+                <p>9. About how many hours do you spend learning each week?</p>
+                <div class="input-field inline">
+                  <input type="number">
+                </div>
+                <p>10. About how many months have you been programming for?</p>
+                <div class="input-field inline">
+                  <input type="number">
+                </div>
+                <p>11. Any additional comments or suggestions?</p>
+                <div class="input-field">
+                  <textarea id="textarea1" class="materialize-textarea"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <h5>User Agreement</h5>
+              <div id="agreement" class="col">
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" value="0" />
+                    <span>I agree to the <a href="https://www.freecodecamp.com/terms" target="_blank" rel="noopener noreferrer">Terms of Service</a> and <a href="https://www.freecodecamp.com/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a></span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox" class="filled-in" checked="checked" value="1" />
+                    <span>Send me free email updates</span>
+                  </label>
+                </p>
+                <button id="submit" class="btn waves-effect waves-light" type="submit" name="action">Submit 
+                  <i class="fas fa-paper-plane"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  -->
+  </main>
+  <footer>
+    <a href="https://github.com/b0mh0lt" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-alt fa-lg"></i> M. Bomholt</a>
+  </footer>
+  
