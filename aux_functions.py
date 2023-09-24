@@ -81,5 +81,6 @@ def buscar_distancia(address, distMax, df, api_key):
     provCercanos.to_csv('provTemp.csv', sep='\t')
     print(provCercanos.head())
 
-def generar_id(df):
-    pass
+def generar_id(df, num):
+    result = (df.loc[num][0])[0:4:1]+(df.loc[num][3])[0:4:1]
+    return result
