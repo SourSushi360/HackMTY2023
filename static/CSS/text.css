@@ -10,3 +10,15 @@ h1 {
     background-color: #e7a935; /* Color de fondo amarillo */
     text-align: center; /* Alinea el contenido al centro */
   }
+h1 {
+    font-size: 48px; /* Cambia el tamaño de letra a 24 píxeles (puedes ajustar este valor según tus preferencias) */
+    margin-top: 42vh;
+  }
+  p {
+    font-size: 15px; /* Cambia el tamaño de letra a 24 píxeles (puedes ajustar este valor según tus preferencias) */
+  }
+
+  body {
+    background-color: #e7a935; /* Color de fondo amarillo */
+    text-align: center; /* Alinea el contenido al centro */
+  }
