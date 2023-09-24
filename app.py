@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import pandas as pd
 #import requests
-from aux_functions import save_data, buscar_distancia
+from aux_functions import guardar_nuevo_usuario, buscar_distancia
 #from find_distance import find_distance
 
 api_key = '5b3ce3597851110001cf6248fd138393e27e4ca89fe9a03a1770f507'
@@ -35,7 +35,7 @@ def submit():
             return "Por favor, llena todos los campos."
         
         #Actualiza la información de la base de datos
-        #save_data(name, email, type, address)
+        guardar_nuevo_usuario(name, email, tipo, address, "test_usuarios.csv")
 
         return "Formato enviado correctamente."
 

@@ -1,21 +1,27 @@
 import pandas as pd
 import requests
 
-def save_data(name, email, type, address):
-    # Guarda la información en una base de datos .csv
-    data_to_add = [[name, email, type, address]]
-    columns = ['Name', 'Email', 'Type', 'Address']
+def guardar_nuevo_usuario(name, email, user_type, address, csv_file_path):
+    # Create a dictionary with the new data
+    new_data = {
+        'Name': [name],
+        'Email': [email],
+        'User_Type': [user_type],
+        'Address': [address]
+    }
 
+    # Read the existing CSV file into a DataFrame
     try:
-        existing_data = pd.read_csv('usuarios.csv')
+        df = pd.read_csv(csv_file_path)
     except FileNotFoundError:
-        existing_data = pd.DataFrame(columns=columns)
-        
-    # Concatenate the existing data and the new data
-    combined_data = pd.concat([existing_data, data_to_add], ignore_index=True)
+        # If the file doesn't exist, create a new DataFrame
+        df = pd.DataFrame(columns=['Name', 'Email', 'User_Type', 'Address'])
 
-    # Save the combined data back to the CSV file
-    combined_data.to_csv('test_usuarios.csv', index=False)
+    # Append the new data to the DataFrame
+    new_df = pd.concat([df, pd.DataFrame(new_data)])
+
+    # Save the updated DataFrame to the CSV file
+    new_df.to_csv(csv_file_path, index=False)
 
 def buscar_distancia(address, distMax, df):
     api_key = '5b3ce3597851110001cf6248fd138393e27e4ca89fe9a03a1770f507'
