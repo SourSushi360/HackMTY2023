@@ -16,7 +16,7 @@ app = Flask(__name__, static_folder='static')
 def index():
     return render_template('index.html')
 
-@app.route('/submit', methods=['POST'])
+@app.route('/submit', methods=['POST']) 
 
 ###Funciones para el formulario###
 def submit():
@@ -48,7 +48,6 @@ def submit():
             return mostrar_output(tipo, id)
         
         
-
 @app.route('/output')
 def mostrar_output(tipo, infoImprimir):
     if tipo == 'D':
