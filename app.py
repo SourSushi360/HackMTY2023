@@ -6,7 +6,7 @@ from aux_functions import save_data, buscar_distancia
 
 api_key = '5b3ce3597851110001cf6248fd138393e27e4ca89fe9a03a1770f507'
 
-df = pd.read_csv('data.csv')
+df = pd.read_csv('test_usuarios.csv')
 distMax = float(30)
 dist = float(0)
 
@@ -50,6 +50,15 @@ def submit():
 
         return "Formato enviado correctamente."
 
+def mostrar_output():
+    proveImp = pd.read_csv('provTemp.csv')
+    cont = int(0)
+    output = " "
+    while(proveImp.shape[0]>cont):
+        output += proveImp.loc[cont][0] + "\t" + proveImp.loc[cont][1] + "\n"
+        cont += 1
+    return render_template('index.html', output=output)
 
 if __name__ == '__main__':
     app.run(debug=True)
+

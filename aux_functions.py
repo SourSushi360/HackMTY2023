@@ -70,3 +70,4 @@ def buscar_distancia(address, distMax, df):
                 
             cont += 1
     provCercanos.sort_values(by = ['distancia'], inplace = True)
+    provCercanos.to_csv('provTemp.csv', sep='\t')
