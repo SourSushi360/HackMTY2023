@@ -1,6 +1,7 @@
 import pandas as pd
 import requests
 
+
 def save_data(name, email, type, address):
     # Guarda la información en una base de datos .csv
     data_to_add = [[name, email, type, address]]
@@ -18,6 +19,7 @@ def save_data(name, email, type, address):
     combined_data.to_csv('test_usuarios.csv', index=False)
 
 def buscar_distancia(address, distMax, df):
+    api_key = '5b3ce3597851110001cf6248fd138393e27e4ca89fe9a03a1770f507'
     df = df.drop(df[df['tipo'] == 'ESR'].index)
     provCercanos = pd.DataFrame(columns = ['datosUsuario','distancia'])
     cont = int(0)
