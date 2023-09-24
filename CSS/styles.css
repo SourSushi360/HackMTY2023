@@ -27,13 +27,24 @@
   }
   
   .ribbon {
-    background-color: #018786;
+    background-color: #e7a935;
     flex-shrink: 0;
-    height: 25vh;
     width: 100%;
     position: absolute;
     top: 0;
   }
+
+  .centered {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+  }
+
+  .centered img {
+    /* Estilos adicionales para la imagen, como ancho máximo, márgenes, etc. */
+    max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+  }
+
   .card-container {
     display: flex;
     justify-content: center;
