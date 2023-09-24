@@ -30,6 +30,36 @@
             background-color: #555; /* Background color when hovering */
         }
       </style>
+  <head>
+    <title>NutreRed</title>
+    <style>
+        /* Style for the navigation menu */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            background-color: #333; /* Background color for the navigation bar */
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px; /* Adjust padding as needed */
+            text-decoration: none;
+            color: #fff; /* Text color for the buttons */
+        }
+
+        /* Style for the buttons */
+        nav ul li a:hover {
+            background-color: #555; /* Background color when hovering */
+        }
+      </style>
 </head>
 <body>
     <header>
@@ -44,10 +74,27 @@
             </ul>
         </nav>
     </header>
-    <div class="ribbon"></div>
-    <div class="centered">
-      <img src="../images/nutrered_logo_medium.png" alt="NutreRed">
-    </div>
+
+      <div class="card-container" id="title_page">
+        <div class="mdc-card">
+          
+            <div class="mdc-layout-grid">
+              <div class="mdc-layout-grid__inner">
+                
+                <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop">
+                  <div class="test">
+                  <i class="fas fa-poll-h fa-3x"></i>
+                  </div>
+                  <div align="center">
+                  <h1 id="title">NutreRed</h1>
+                  <p id="description">Nutrición compartida, amor multiplicado</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="card-container">
         <div class="mdc-card">
           <form action="/submit" method="post">
