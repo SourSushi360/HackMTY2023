@@ -29,13 +29,17 @@
   .ribbon {
     background-color: #018786;
     flex-shrink: 0;
-    height: 42vh;
+    height: 25vh;
     width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
   }
   .card-container {
     display: flex;
     justify-content: center;
     margin-top: -40vh;
+    opacity: 0.5;
   }
   .mdc-card {
     width: 100%;
@@ -51,7 +55,13 @@
     margin-right: 2px;
   }
   
-  
+  h1 {
+    font-size: 48px; /* Cambia el tamaño de letra a 24 píxeles (puedes ajustar este valor según tus preferencias) */
+    margin-top: 42vh;
+  }
+  p {
+    font-size: 12px; /* Cambia el tamaño de letra a 24 píxeles (puedes ajustar este valor según tus preferencias) */
+  }
   
   .mdc-text-field--radio {
     height: 1.75rem;
