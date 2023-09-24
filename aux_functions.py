@@ -1,5 +1,6 @@
 import pandas as pd
 import requests
+import random
 
 def guardar_nuevo_usuario(name, email, user_type, address, csv_file_path):
     # Create a dictionary with the new data
@@ -30,11 +31,11 @@ def guardar_nuevo_usuario(name, email, user_type, address, csv_file_path):
 
 def buscar_distancia(address, distMax, df, api_key):
     df = df.drop(df[df['User_Type'] == 'Beneficiario'].index)
-    provCercanos = pd.DataFrame(columns = ['datosUsuario','distancia'])
+    provCercanos = pd.DataFrame(columns = ['datosUsuario', 'email', 'distancia'])
     cont = int(0)
     
     while(df.shape[0]-1>cont):
-            direccion = df.loc[cont]["Address"]
+            direccion = df.iloc[cont]["Address"]
             # Define the starting and ending addresses
             start_address = address
             end_address = direccion
@@ -63,7 +64,7 @@ def buscar_distancia(address, distMax, df, api_key):
                         data = response.json()
                         # Extract the distance in meters from the response
                         distance_meters = data['features'][0]['properties']['segments'][0]['distance']
-                        provCercanos.loc[cont] = [df.loc[cont]["Name"], distance_meters/1000]
+                        provCercanos.loc[cont] = [df.loc[cont]["Name"], df.loc[cont]["Email"], distance_meters/1000]
 
                         print(f"Distance in meters: {distance_meters} meters")
                     else:
@@ -78,9 +79,20 @@ def buscar_distancia(address, distMax, df, api_key):
                 
             cont += 1
     provCercanos.sort_values(by = ['distancia'], inplace = True)
-    provCercanos.to_csv('provTemp.csv', sep='\t')
-    return provCercanos.to_string()
+    return string_para_html(provCercanos)
 
 def generar_id(name, address):
-    result = name[0:4:1]+address[0:4:1]
+    result = name[0:4:1]+address[0:4:1]+str(random.randint(1000, 9999))
     return result
+
+def string_para_html(df):
+    cont = int(0)
+    output = " "
+    while(df.shape[0]>cont):
+        #Get the rows and convert the whole row to string
+        output += str(df.iloc[cont].values)
+        output += "\n\t\r\n\t\r"
+        cont += 1
+        #output += df.at[cont, "datosUsuario"] + "\t" + df.at[cont, "email"] + "\t" + str(df.at[cont, "distancia"]) + "\n"
+    return output
+        

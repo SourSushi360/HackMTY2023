@@ -40,10 +40,10 @@ def submit():
         guardar_nuevo_usuario(name, email, tipo, address, "test_usuarios.csv")
                 
         # Busca los proveedores cercanos
-        if tipo == 'D':
+        if tipo == 'C':
             donantes_cercanos = buscar_distancia(address, distMax, df, api_key)
             return mostrar_output(tipo, donantes_cercanos)
-        elif tipo == 'C':
+        elif tipo == 'D':
             id=generar_id(name, address)
             return mostrar_output(tipo, id)
         
@@ -51,9 +51,9 @@ def submit():
 @app.route('/output')
 def mostrar_output(tipo, infoImprimir):
     if tipo == 'D':
-        return render_template('output.html', id=infoImprimir)
+        return render_template('output.html', output=infoImprimir)
     elif tipo == 'C':
-        return render_template('output2.html', donantes_cercanos=infoImprimir)
+        return render_template('output2.html', output=infoImprimir)
 
 if __name__ == '__main__':
     app.run(debug=True)
