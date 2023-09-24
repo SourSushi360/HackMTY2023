@@ -40,12 +40,16 @@ def submit():
         guardar_nuevo_usuario(name, email, tipo, address, "test_usuarios.csv")
                 
         # Busca los proveedores cercanos
-        donantes_cercanos = buscar_distancia(address, distMax, df, api_key)
+        if tipo == 'D':
+            donantes_cercanos = buscar_distancia(address, distMax, df, api_key)
+            return mostrar_output(tipo, donantes_cercanos)
+        elif tipo == 'C':
+            return mostrar_output(tipo)
         
-        return mostrar_output(tipo, donantes_cercanos)
+        
 
 @app.route('/output')
-def mostrar_output(tipo, donantes_cercanos=0, id=0):
+def mostrar_output(tipo, donantes_cercanos="", id=""):
     if tipo == 'D':
         return render_template('output.html', id=id)
     elif tipo == 'C':
