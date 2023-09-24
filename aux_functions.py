@@ -4,7 +4,7 @@ import requests
 def guardar_nuevo_usuario(name, email, user_type, address, csv_file_path):
     # Create a dictionary with the new data
     if user_type == 'D':
-        user_type = 'Donador'
+        user_type = 'Donante'
     elif user_type == 'C':
         user_type = 'Beneficiario'
         
@@ -33,8 +33,8 @@ def buscar_distancia(address, distMax, df, api_key):
     provCercanos = pd.DataFrame(columns = ['datosUsuario','distancia'])
     cont = int(0)
     
-    while(df.shape[0]>cont):
-            direccion = df.loc[cont][3]
+    while(df.shape[0]-1>cont):
+            direccion = df.loc[cont]["Address"]
             # Define the starting and ending addresses
             start_address = address
             end_address = direccion
@@ -77,19 +77,8 @@ def buscar_distancia(address, distMax, df, api_key):
             dist = distance_meters/1000
             if(dist < distMax):
                 textUsu =  df.loc[cont][0] + ", " + df.loc[cont][1] + ", " + df.loc[cont][3]
-                new_row = {'datosUsuario': textUsu, 'distancia': dist}
-                provCercanos.append(new_row, ignore_index=True)
+                provCercanos.loc[len(provCercanos)] = [textUsu, dist]
                 
             cont += 1
     provCercanos.sort_values(by = ['distancia'], inplace = True)
     provCercanos.to_csv('provTemp.csv', sep='\t')
-
-def generar_ID_empresa(name, email, tipo, address):
-    id = "D" + name[0:3] + email[0:3] + tipo[0:3] + address[0:3]
-    print(id)
-    return id
-
-def generar_ID_beneficiario(name, email, tipo, address):
-    id = "B" + name[0:3] + email[0:3] + tipo[0:3] + address[0:3]
-    print(id)
-    return id
