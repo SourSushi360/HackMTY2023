@@ -1,10 +1,10 @@
 body {
-    background-color: yellow; /* Color de fondo amarillo */
+    background-color: #e7a935; /* Color de fondo amarillo */
     text-align: center; /* Alinea el contenido al centro */
 }
 
 h1 {
-    font-size: 36px; /* Tamaño de fuente para el título */
+    font-size: 48px; /* Tamaño de fuente para el título */
     padding: 20px; /* Espaciado interior alrededor del título */
 }
 
