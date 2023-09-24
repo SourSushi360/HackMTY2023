@@ -1,9 +1,49 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="../CSS/styles.css">
+  <head>
+    <title>NutreRed</title>
+    <style>
+        /* Style for the navigation menu */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            background-color: #333; /* Background color for the navigation bar */
+        }
+
+        nav ul li {
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px 20px; /* Adjust padding as needed */
+            text-decoration: none;
+            color: #fff; /* Text color for the buttons */
+        }
+
+        /* Style for the buttons */
+        nav ul li a:hover {
+            background-color: #555; /* Background color when hovering */
+        }
+      </style>
 </head>
-  <main>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <!-- Existing tabs -->
+                <li><a href="home.html">Home</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                
+                <!-- New tab -->
+                <li><a href="aportar.html">Aportar</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="ribbon"></div>
     <div class="centered">
       <img src="../images/nutrered_logo_medium.png" alt="NutreRed">

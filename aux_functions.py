@@ -3,6 +3,11 @@ import requests
 
 def guardar_nuevo_usuario(name, email, user_type, address, csv_file_path):
     # Create a dictionary with the new data
+    if user_type == 'D':
+        user_type = 'Donador'
+    elif user_type == 'C':
+        user_type = 'Beneficiario'
+        
     new_data = {
         'Name': [name],
         'Email': [email],
@@ -23,16 +28,16 @@ def guardar_nuevo_usuario(name, email, user_type, address, csv_file_path):
     # Save the updated DataFrame to the CSV file
     new_df.to_csv(csv_file_path, index=False)
 
-def buscar_distancia(address, distMax, df):
-    api_key = '5b3ce3597851110001cf6248fd138393e27e4ca89fe9a03a1770f507'
-    df = df.drop(df[df['tipo'] == 'ESR'].index)
+def buscar_distancia(address, distMax, df, api_key):
+    df = df.drop(df[df['User_Type'] == 'Beneficiario'].index)
     provCercanos = pd.DataFrame(columns = ['datosUsuario','distancia'])
     cont = int(0)
-    start_address = address
+    
     while(df.shape[0]>cont):
             direccion = df.loc[cont][3]
             # Define the starting and ending addresses
-            end_address = direccion  # Example: Apple Campus
+            start_address = address
+            end_address = direccion
 
             # Geocode the starting and ending addresses to get their coordinates
             geocode_url = f'https://api.openrouteservice.org/geocode/search?api_key={api_key}&text='
@@ -78,3 +83,13 @@ def buscar_distancia(address, distMax, df):
             cont += 1
     provCercanos.sort_values(by = ['distancia'], inplace = True)
     provCercanos.to_csv('provTemp.csv', sep='\t')
+
+def generar_ID_empresa(name, email, tipo, address):
+    id = "D" + name[0:3] + email[0:3] + tipo[0:3] + address[0:3]
+    print(id)
+    return id
+
+def generar_ID_beneficiario(name, email, tipo, address):
+    id = "B" + name[0:3] + email[0:3] + tipo[0:3] + address[0:3]
+    print(id)
+    return id

@@ -1,0 +1,31 @@
+body {
+    background-color: yellow; /* Color de fondo amarillo */
+    text-align: center; /* Alinea el contenido al centro */
+}
+
+h1 {
+    font-size: 36px; /* Tamaño de fuente para el título */
+    padding: 20px; /* Espaciado interior alrededor del título */
+}
+
+#upload-form {
+    margin: 20px auto; /* Margen exterior para centrar el formulario */
+    max-width: 400px; /* Ancho máximo para el formulario */
+    background-color: white; /* Color de fondo del formulario */
+    padding: 20px; /* Espaciado interior del formulario */
+    border-radius: 10px; /* Borde redondeado del formulario */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Sombra del formulario */
+}
+
+input[type="file"] {
+    margin: 10px 0; /* Espacio entre el campo de archivo y otros elementos */
+}
+
+input[type="submit"] {
+    background-color: #007BFF; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    padding: 10px 20px; /* Espaciado interior del botón */
+    border: none; /* Sin borde del botón */
+    border-radius: 5px; /* Borde redondeado del botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
