@@ -27,17 +27,17 @@
   }
   
   .ribbon {
-    background-color: #e7a935;
-    flex-shrink: 0;
-    width: 100%;
     position: absolute;
-    top: 0;
-  }
+    background-color: #e7a935; /* Blue background color for the ribbon */
+    padding: 120px; /* Adjust padding as needed */
+    border-radius: 0px; /* Rounded corners for the ribbon */
+    width: 100%;
+    }
 
   .centered {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    opacity: .999;
   }
 
   .centered img {
@@ -64,9 +64,6 @@
     font-size: 48px; /* Cambia el tamaño de letra a 24 píxeles (puedes ajustar este valor según tus preferencias) */
     margin-top: 42vh;
   }
-  h2 {
-    margin-top: 42vh;
-  }
   p {
     font-size: 15px; /* Cambia el tamaño de letra a 24 píxeles (puedes ajustar este valor según tus preferencias) */
   }
@@ -78,7 +75,19 @@
   .mdc-text-field--radio input {
     font-size: 0.875rem;
   }
-  
-  #title_page {
-    background-color: #018786;
+  #columna1 {
+    display: absolute;
+    background-color: #e7a935;
+  }
+  .column {
+    width: 50%; /* Ancho de la columna (ajusta según tus necesidades) */
+    float: left; /* Hace que las columnas se coloquen una al lado de la otra */
+  }
+  #form {
+    display: absolute;
+    margin-top: 42vh;
+  }
+  #imagen_comida {
+    
+    opacity: .5;
   }
