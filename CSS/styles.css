@@ -76,9 +76,16 @@
     font-size: 0.875rem;
   }
   #columna1 {
+    margin-top: 10vh;
     display: absolute;
     background-color: #e7a935;
-
+  }
+  #texto_columna1 {
+    margin-top: 1vh;
+    margin-left: 1vh;
+    font-family: "Roboto", sans-serif;
+    font-size: .938rem;
+    font-weight: 400;
   }
   .column {
     width: 50%; /* Ancho de la columna (ajusta según tus necesidades) */
@@ -89,7 +96,7 @@
     margin-top: 42vh;
   }
   #imagen_comida {
-  
+    margin-top: 10vh;
     opacity: .5;
   }
 
