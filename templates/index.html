@@ -12,10 +12,10 @@
         <nav>
             <ul>
                 <!-- Existing tabs -->
-                <li><a href="templates/index.html">Home</a></li>
+                <!-- <li><a href="{{ url_for('static', filename='static/templates/index.html') }}">Home</a></li> -->
                 
                 <!-- New tab -->
-                <li><a href="aportar.html">Aportar</a></li>
+                <li><a href="{{ url_for('static', filename='templates/aportar.html') }}">Aportar</a></li>
             </ul>
         </nav>
     
