@@ -1,14 +1,13 @@
 import pandas as pd
 import requests
 
-
 def save_data(name, email, type, address):
     # Guarda la información en una base de datos .csv
     data_to_add = [[name, email, type, address]]
     columns = ['Name', 'Email', 'Type', 'Address']
 
     try:
-        existing_data = pd.read_csv('your_existing_file.csv')
+        existing_data = pd.read_csv('usuarios.csv')
     except FileNotFoundError:
         existing_data = pd.DataFrame(columns=columns)
         
@@ -23,10 +22,10 @@ def buscar_distancia(address, distMax, df):
     df = df.drop(df[df['tipo'] == 'ESR'].index)
     provCercanos = pd.DataFrame(columns = ['datosUsuario','distancia'])
     cont = int(0)
+    start_address = address
     while(df.shape[0]>cont):
             direccion = df.loc[cont][3]
             # Define the starting and ending addresses
-            start_address = address
             end_address = direccion  # Example: Apple Campus
 
             # Geocode the starting and ending addresses to get their coordinates

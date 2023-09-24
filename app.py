@@ -21,32 +21,21 @@ def index():
 ###Funciones para el formulario###
 def submit():
     if request.method == 'POST':
-        name = request.form['name']
+        name = request.form['nombre']
         email = request.form['email']
-        message = request.form['type']
+        tipo = request.form['tipo']
         address = request.form['address']
-
-        if not name or not email or not message or not address:
-            return "Por favor, llena todos los campos."
-        
-        if type == "Empresa Socialmente Responsable": #Empresa Solicitante de Responsable
-            type = "ESR"
-        elif type == "Caridad/ONG": #Caridad/ONG
-            type = "ONG"
-            buscar_distancia(address, distMax, df)
-            
-        else:
-            return "Por favor, selecciona un tipo de organización."
-        
-        #Actualiza la información de la base de datos
-        save_data(name, email, type, address)
-        
-        
         
         print(f"Name: {name}")
         print(f"Email: {email}")
-        print(f"Type: {type}")
+        print(f"Type: {tipo}")
         print(f"Address: {address}")
+
+        if not name or not email or not tipo or not address:
+            return "Por favor, llena todos los campos."
+        
+        #Actualiza la información de la base de datos
+        #save_data(name, email, type, address)
 
         return "Formato enviado correctamente."
 
