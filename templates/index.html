@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <main>
-      <link rel="stylesheet" type="text/css" href="../CSS/styles.css"> <!-- Vincula el archivo CSS externo -->
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='CSS/styles.css') }}"> <!-- Vincula el archivo CSS externo -->
         <div class="ribbon"></div>
     <div class="centered">
-      <img src="../images/nutrered_logo_medium.png" alt="NutreRed">
+      <img src="{{ url_for('static', filename='images/nutrered_logo_medium.png') }}" alt="NutreRed">
     </div>
        
   <body>
@@ -12,7 +12,7 @@
         <nav>
             <ul>
                 <!-- Existing tabs -->
-                <li><a href="index.html">Home</a></li>
+                <li><a href="templates/index.html">Home</a></li>
                 
                 <!-- New tab -->
                 <li><a href="aportar.html">Aportar</a></li>
@@ -32,14 +32,14 @@
                 </div>
                 <div class="column">
                   <div id="imagen_comida">
-                    <img src="../images/desperdicio_comida.png" alt="desperdicio_comida" width="100%" height="100%">
+                    <img src="{{ url_for('static', filename='images/desperdicio_comida.png') }}" alt="desperdicio_comida" width="100%" height="100%">
                   </div>
                 </div>
 
                 <h1 align="center" id="header2">Nuestra misión</h1>
                 <div class="column">
                   <div id="imagen_comida">
-                    <img src="../images/ESR.png" alt="empresa_socio_responsable" width="100%" height="100%">
+                    <img src="{{ url_for('static', filename='images/ESR.png') }}" alt="empresa_socio_responsable" width="100%" height="100%">
                   </div>
                 </div>
                 <div class="column" id="columna1">

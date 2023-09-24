@@ -10,7 +10,7 @@ df = pd.read_csv('test_usuarios.csv')
 distMax = float(30)
 dist = float(0)
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder='static')
 
 @app.route('/')
 def index():
