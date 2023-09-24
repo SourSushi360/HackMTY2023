@@ -1,7 +1,8 @@
-Name,Email,Type,Address
-David Ortiz Cota,david@example.com,ESR,Ricardo Guiraldes 123
-Maria Lopez,maria@example.com,ONG,123 Main Street
-John Doe,john@example.com,ESR,456 Elm Avenue
-Ana Martinez,ana@example.com,ONG,789 Oak Lane
-Carlos Sanchez,carlos@example.com,ESR,101 Pine Road
-Laura Rodriguez,laura@example.com,ONG,222 Birch Street
+Name,Email,Type,Address,User_Type
+David Ortiz Cota,david@example.com,ESR,Ricardo Guiraldes 123,
+Maria Lopez,maria@example.com,ONG,123 Main Street,
+John Doe,john@example.com,ESR,456 Elm Avenue,
+Ana Martinez,ana@example.com,ONG,789 Oak Lane,
+Carlos Sanchez,carlos@example.com,ESR,101 Pine Road,
+Laura Rodriguez,laura@example.com,ONG,222 Birch Street,
+David,david@gmail.com,,Av. Calle,C
