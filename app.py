@@ -26,11 +26,13 @@ def submit():
         tipo = request.form['tipo']
         address = request.form['address']
         
+        '''
         print(f"Name: {name}")
         print(f"Email: {email}")
         print(f"Type: {tipo}")
         print(f"Address: {address}")
-
+        '''
+        
         if not name or not email or not tipo or not address:
             return "Por favor, llena todos los campos."
         
@@ -38,19 +40,16 @@ def submit():
         guardar_nuevo_usuario(name, email, tipo, address, "test_usuarios.csv")
                 
         # Busca los proveedores cercanos
-        print(address)
-        buscar_distancia(address, distMax, df, api_key)
+        donantes_cercanos = buscar_distancia(address, distMax, df, api_key)
         
-        return "Formato enviado correctamente."
+        return mostrar_output(tipo, donantes_cercanos)
 
-def mostrar_output():
-    proveImp = pd.read_csv('provTemp.csv')
-    cont = int(0)
-    output = " "
-    while(proveImp.shape[0]>cont):
-        output += proveImp.loc[cont][0] + "\t" + proveImp.loc[cont][1] + "\n"
-        cont += 1
-    return render_template('index.html', output=output)
+@app.route('/output')
+def mostrar_output(tipo, donantes_cercanos=0, id=0):
+    if tipo == 'D':
+        return render_template('output.html', id=id)
+    elif tipo == 'C':
+        return render_template('output2.html', donantes_cercanos=donantes_cercanos)
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -63,7 +63,7 @@ def buscar_distancia(address, distMax, df, api_key):
                         data = response.json()
                         # Extract the distance in meters from the response
                         distance_meters = data['features'][0]['properties']['segments'][0]['distance']
-                        guardado = distance_meters
+                        provCercanos.loc[cont] = [df.loc[cont]["Name"], distance_meters/1000]
 
                         print(f"Distance in meters: {distance_meters} meters")
                     else:
@@ -74,11 +74,12 @@ def buscar_distancia(address, distMax, df, api_key):
             except Exception as e:
                 print(f"An error occurred: {e}")
 
-            dist = distance_meters/1000
-            if(dist < distMax):
-                textUsu =  df.loc[cont][0] + ", " + df.loc[cont][1] + ", " + df.loc[cont][3]
-                provCercanos.loc[len(provCercanos)] = [textUsu, dist]
+            provCercanos.drop(provCercanos[provCercanos['distancia'] > distMax].index, inplace = True)
                 
             cont += 1
     provCercanos.sort_values(by = ['distancia'], inplace = True)
     provCercanos.to_csv('provTemp.csv', sep='\t')
+    print(provCercanos.head())
+
+def generar_id(df):
+    pass
