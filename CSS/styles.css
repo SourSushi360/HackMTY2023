@@ -76,16 +76,28 @@
     font-size: 0.875rem;
   }
   #columna1 {
-    margin-top: 10vh;
     display: absolute;
     background-color: #e7a935;
   }
   #texto_columna1 {
-    margin-top: 1vh;
-    margin-left: 1vh;
+    margin-top: 3vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 3vh;
     font-family: "Roboto", sans-serif;
-    font-size: .938rem;
+    font-size: 1.3rem;
     font-weight: 400;
+    text-align: right;
+  }
+  #texto_columna2 {
+    margin-top: 3vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    margin-bottom: 3vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    text-align: left;
   }
   .column {
     width: 50%; /* Ancho de la columna (ajusta según tus necesidades) */
@@ -93,11 +105,25 @@
   }
   #form {
     display: absolute;
-    margin-top: 42vh;
+    margin-top: 10vh;
   }
   #imagen_comida {
-    margin-top: 10vh;
-    opacity: .5;
+    opacity: 1;
+  }
+
+  #header2 {
+    margin-top: 55vh;
+  }
+  #header3 {
+    margin-top: 48vh;
+  }
+  #lista1 {
+    text-align: center;
+    display: absolute;
+    background-color: #e7a935;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
   }
 
   /* Style for the navigation menu */
