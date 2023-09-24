@@ -2,14 +2,12 @@
 <html>
   <link rel="stylesheet" href="../CSS/styles.css">
   <main>
-      <div class="ribbon"></div>
-      <div class="card-container">
+
+      <div class="card-container" id="title_page">
         <div class="mdc-card">
           
-          <form action="/submit" method="post">
             <div class="mdc-layout-grid">
               <div class="mdc-layout-grid__inner">
-                
                 
                 <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop">
                   <div class="test">
@@ -20,6 +18,16 @@
                   <p id="description">Una solución al hambre.</p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-container">
+        <div class="mdc-card">
+          <form action="/submit" method="post">
+            <div class="mdc-layout-grid">
+              <div class="mdc-layout-grid__inner">
                 <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-12-desktop">
                   <h2>Introduce tu información</h2>
                 </div>
@@ -52,13 +60,6 @@
                   </label>
                 </div>
                 
-                <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
-                  <select name="tipo" id="dropdown">
-                    <option value="C">Soy una caridad</option>
-                    <option value="D">Soy una empresa socialmente responsable</option>
-                  </select>
-                </div>
-                
                 <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-6-tablet mdc-layout-grid__cell--span-9-desktop">
                   <label id="email-label" class="mdc-text-field mdc-text-field--filled w-100">
                     <span class="mdc-text-field__ripple"></span>
@@ -71,6 +72,13 @@
                     <span class="mdc-floating-label" id="email-floating-label">Dirección</span>
                     <span class="mdc-line-ripple"></span>
                   </label>
+                </div>
+
+                <div class="mdc-layout-grid__cell--span-4-phone mdc-layout-grid__cell--span-8-tablet mdc-layout-grid__cell--span-6-desktop">
+                  <select name="tipo" id="dropdown">
+                    <option value="C">Soy una caridad</option>
+                    <option value="D">Soy una empresa socialmente responsable</option>
+                  </select>
                 </div>
               </div>
             </div>

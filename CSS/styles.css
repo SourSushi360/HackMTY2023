@@ -33,13 +33,11 @@
     width: 100%;
     position: absolute;
     top: 0;
-    opacity: 0.5;
   }
   .card-container {
     display: flex;
     justify-content: center;
     margin-top: -40vh;
-    opacity: 0.5;
   }
   .mdc-card {
     width: 100%;
@@ -59,8 +57,11 @@
     font-size: 48px; /* Cambia el tamaño de letra a 24 píxeles (puedes ajustar este valor según tus preferencias) */
     margin-top: 42vh;
   }
+  h2 {
+    margin-top: 42vh;
+  }
   p {
-    font-size: 12px; /* Cambia el tamaño de letra a 24 píxeles (puedes ajustar este valor según tus preferencias) */
+    font-size: 15px; /* Cambia el tamaño de letra a 24 píxeles (puedes ajustar este valor según tus preferencias) */
   }
   
   .mdc-text-field--radio {
@@ -69,4 +70,8 @@
   
   .mdc-text-field--radio input {
     font-size: 0.875rem;
+  }
+  
+  #title_page {
+    background-color: #018786;
   }
